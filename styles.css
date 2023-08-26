@@ -1,30 +1,27 @@
 body{
+    margin: 0;
     width: 100%;
     height: 100%;
     justify-content: center;
     align-items: flex-start;
     background-color: #ffffff;
     display: inline-flex;
-
-
+    flex-direction: row;
 }
 
-.image{
-    background: linear-gradient(0deg, rgba(17, 17, 17, 0.25) 0%, rgba(17, 17, 17, 0.25) 100%), url(./images/pxfuel.jpg), lightgray 50% / cover no-repeat;
-    width: 720px; height: 1024px;
-    position: relative; 
+.image {
+    background:linear-gradient(0deg, rgba(17, 17, 17, 0.25) 0%, rgba(17, 17, 17, 0.25) 100%), url(./images/pxfuel1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 720px; 
+    height: 1024px;
     flex-direction: column; 
+    position: relative; 
     justify-content: flex-start; 
     align-items: flex-start; 
     display: inline-flex;
-
-
-flex-shrink: 0;
-
-
-left: 0px;
-top: 0px;
-
+    left: 0px;
+    top: 0px;
 }
 
 .Headline-Subhead{
@@ -34,41 +31,38 @@ top: 0px;
     gap: 16px; 
     display: inline-flex; 
 
-    margin: 50px;
+    margin-top: 182px; 
+    margin-left: 72px; 
+    margin-right: 283px;
+    font-family: Poppins;
+
 
 
 }
 
 
 .signIn{
-
-    width: 100%;
-    height: 100%; 
+    width: 720px; 
+    height: 1024px; 
     position: relative; 
     flex-direction: column; 
-    justify-content: flex-start; 
-    align-items: flex-start; 
+    justify-content: space-evenly;    
+    align-items: center;  
     display: inline-flex;
 }
 
-.header{
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: flex-start; 
-    gap: 8px; 
-    display: inline-flex;
-
-
-}
-
-
-.signUp{
+.signUpTop{
     padding: 2px; 
     justify-content: flex-end; 
     align-items: flex-end; 
-    gap: 10px; 
     display:inline-flex;
-   
+    flex-direction: row; 
+    font-size: regular; 
+    font-family: Poppins;
+    margin-right: 10px; 
+
+   margin-top: 48px;
+   margin-left: 423px;  
   
 
 }
@@ -77,7 +71,6 @@ top: 0px;
     font-size: 16px; 
     font-family: Poppins; 
     font-weight: 400; 
-    word-wrap: break-word;
     padding: 2px;
    
 
@@ -87,8 +80,11 @@ top: 0px;
     flex-direction: column; 
     justify-content: flex-start; 
     align-items: flex-start; 
-    gap: 48px; 
+  
     display: inline-flex;
+    margin-left: 76px; 
+    margin-top: 90px;  
+ 
 
 
 }
@@ -102,21 +98,16 @@ top: 0px;
     display: flex
 }
 
-/* .withGoogle{
-    width: 568px; 
-    height: 64px; 
-   
-    background: white; 
-    border-radius: 40px; 
-    border: 0.50px #333333 solid; 
-    justify-content: center; 
-    align-items: center; 
-    display: inline-flex;
-} */
 
 
-.withGoogle , .withTweeter {
-    width: 90%;
+
+.withGoogle {
+    position: relative; 
+    background-image: url('./images/pngwing.com.png');
+    background-size: 40px 40px ; 
+    background-repeat: no-repeat;
+    background-position: 120px center; 
+    width: 100%;
     height: 64px; 
     padding: 10px;
     background-color: white;
@@ -126,13 +117,35 @@ top: 0px;
     transition: background-color 0.3s, color 0.3s;
     color: #333333; 
     font-size: 24px; 
-    font-family: Avenir; 
     font-weight: 400; 
-    word-wrap: break-word
+    word-wrap: break-word;
+    font-family: Poppins;
 }
 
-.withGoogle:hover , .withTweeter:hover {
-    background-color: #333333;
+.withTwitter {
+    position: relative; 
+    background-image: url('./images/pngegg.png');
+    background-size: 40px 40px ; 
+    background-repeat: no-repeat;
+    background-position: 120px center; 
+    width: 100%;
+    height: 64px; 
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #333333;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    color: #333333; 
+    font-size: 24px; 
+    font-weight: 400; 
+    word-wrap: break-word;
+    font-family: Poppins;
+}
+
+
+.withGoogle:hover , .withTwitter:hover {
+    background-color: #997825;
     color: white;
 }
 
@@ -144,6 +157,8 @@ top: 0px;
     align-items: center; 
     gap: 23px; 
     display: inline-flex;
+    font-family: Poppins;
+    
 }
 
 .divider{
@@ -156,28 +171,31 @@ top: 0px;
     flex-direction: column; 
     justify-content: flex-start; 
     align-items: flex-start; 
-    gap: 18px; 
     display: flex
 }
 
 label{
-    color: #666666; font-size: 16px; font-family: Poppins; font-weight: 400; word-wrap: break-word;
+    color: #666666; 
+    font-size: 16px; 
+    font-family: Poppins; 
+    font-weight: 400; 
+    word-wrap: break-word;
 }
 
 .email , .password{
     flex-direction: column; 
     justify-content: flex-start; 
     align-items: flex-start; 
-    gap: 4px; 
     display: flex;
-    padding-bottom: 3px; 
     padding-right: 369px; 
     display: inline-flex;
     width: 200px; 
     height: 56px; 
     position: relative; 
     border-radius: 12px; 
-    border: 0.50px rgba(102, 102, 102, 0.35) solid
+    border: 0.50px rgba(102, 102, 102, 0.35) solid;
+
+
 }
 
 
@@ -185,7 +203,8 @@ label{
 .pass {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 350px;
+    
 }
 
 .hide-password {
@@ -195,8 +214,75 @@ label{
     font-family: Poppins;
     font-weight: 400;
     word-wrap: break-word;
+    position: absolute;
+    right: 50px;
+    cursor: pointer;
 
-
-   
 }
 
+.hide-password i {
+    font-size: 18px;
+   margin-right: 10px;
+    
+}
+
+
+.forgot{
+    text-align: right; 
+    color: #111111; 
+
+
+    font-weight: 400; 
+    text-decoration: underline;
+    word-wrap: break-word;
+
+
+
+
+
+    justify-content: flex-end; 
+    align-items: flex-end; 
+    display:inline-flex;
+    flex-direction: row; 
+    font-size:bold; 
+    font-family: Poppins;
+    margin-right: 10px; 
+
+   margin-left: 390px;  
+
+}
+
+.button{
+width: 304px; 
+height: 64px; 
+padding-top: 16.50px; 
+padding-bottom: 17.50px; 
+background: #997825; 
+border-radius: 32px; 
+justify-content: center; 
+align-items: center; 
+display: inline-flex;
+text-align: center; 
+color: white; 
+font-size: 20px; 
+font-family: Poppins; 
+font-weight: 400; 
+word-wrap: break-word;
+
+}
+
+
+.signUpBottom {
+    padding: 2px; 
+    justify-content: flex-end; 
+    align-items: flex-end; 
+    display:inline-flex;
+    flex-direction: row; 
+    font-size: regular; 
+    font-family: Poppins;
+    margin-right: 10px; 
+
+  
+  
+
+}
