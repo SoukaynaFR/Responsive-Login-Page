@@ -1,373 +1,308 @@
-body{
-   margin: 0 auto;
-   width: 100%;
-   background-color: #ffffff;
-   display: flex;
-   font-family: Poppins;
-
-
-
+body {
+  margin: 0 auto;
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  font-family: Poppins;
 }
 
-.container{
-   
-     justify-content: center;
-     align-items: flex-start;
-     background-color: #ffffff;
-     display: flex;
-     flex-direction: row;
-
-     max-width: 1536px;
-     margin-left: auto;
-     margin-right: auto;
-
-
+.container {
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  max-width: 1536px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* 2xl */
+.image {
+  background: linear-gradient(
+      0deg,
+      rgba(17, 17, 17, 0.25) 0%,
+      rgba(17, 17, 17, 0.25) 100%
+    ),
+    url(./images/pxfuel1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.Headline-Subhead {
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+  display: inline-flex;
+  margin-top: 182px;
+  margin-left: 72px;
+  margin-right: 283px;
+  margin-bottom: 70%;
+  font-family: Poppins;
+}
+
+.signIn {
+  height: 100%;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  display: inline-flex;
+}
+
+.signUpTop {
+  padding: 2px;
+  justify-content: flex-end;
+  flex-direction: row;
+  font-family: Poppins;
+  margin-top: 40px;
+  margin-left: 50%;
+  word-wrap: none;
+  gap: 30px;
+}
+
+.LogIn {
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+  margin-left: 50px;
+  margin-right: 50px;
+  position: relative;
+}
+
+.continue {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px;
+  display: flex;
+}
+
+.withGoogle {
+  position: relative;
+  background-image: url("./images/pngwing.com.png");
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  background-position: 120px center;
+  width: 100%;
+  height: 64px;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid #333333;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  color: #333333;
+  font-size: 24px;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.withTwitter {
+  position: relative;
+  background-image: url("./images/pngegg.png");
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  background-position: 120px center;
+  width: 100%;
+  height: 64px;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid #333333;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  color: #333333;
+  font-size: 24px;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.OR {
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 23px;
+  display: inline-flex;
+  font-family: Poppins;
+}
+
+.divider {
+  flex: 1 1 0;
+  height: 2px;
+  background: rgba(102, 102, 102, 0.25);
+}
+
+.form {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+}
+
+label {
+  color: #666666;
+  font-size: 16px;
+  font-family: Poppins;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.email,
+.password {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  display: inline-flex;
+  width: 100%;
+  height: 45px;
+  padding: 10px;
+  position: relative;
+  border-radius: 12px;
+  border: 0.5px rgba(102, 102, 102, 0.35) solid;
+}
+
+.pass {
+  display: flex;
+  align-items: center;
+}
+
+.hide-password {
+  text-align: right;
+  color: rgba(102, 102, 102, 0.8);
+  font-size: 18px;
+  font-family: Poppins;
+  font-weight: 400;
+  word-wrap: break-word;
+  position: absolute;
+  cursor: pointer;
+  align-items: end;
+  right: 0px;
+}
+
+.forgot {
+  color: #111111;
+  text-decoration: underline;
+  align-items: end;
+  font-family: Poppins;
+  right: 0px;
+  margin-left: 350px;
+  font-weight: bolder;
+  text-align: right;
+  word-break: keep-all;
+  word-wrap: none;
+}
+
+.button {
+  width: 304px;
+  height: 64px;
+  padding-top: 16.5px;
+  padding-bottom: 16.5px;
+  background: #997825;
+  border-radius: 32px;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-family: Poppins;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.signUpBottom {
+  padding: 2px;
+  justify-content: flex-end;
+  align-items: flex-end;
+  display: inline-flex;
+  flex-direction: row;
+  font-size: regular;
+  font-family: Poppins;
+  margin-right: 10px;
+  bottom: 20px;
+}
+
 @media (max-width: 1536px) {
   .container {
     max-height: fit-content;
 
-      max-width: 100%;
-      display: flex;
-      flex-direction: row;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
   }
-  .image{
-  min-width:50%;
-  max-height: fit-content;
+  .image {
+    min-width: 50%;
+    max-height: fit-content;
+  }
+  .signIn {
+    min-width: 50%;
+    max-height: fit-content;
+  }
+}
 
+@media (max-width: 1280px) {
+  .container {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    max-height: fit-content;
   }
-  .signIn{
-  min-width:50%;
-  max-height: fit-content;
-
-
+  .image {
+    min-width: 50%;
   }
-  }
-  
-  /* xl */
-  @media (max-width: 1280px) {
-    .container {
-     
-      max-width: 100%;
-      display: flex;
-      flex-direction: row;
-      max-height: fit-content;
-
-  }
-  .image{
-  min-width:50%;
-  }
-  .signIn{
-  min-width:50%;
-
+  .signIn {
+    min-width: 50%;
   }
 
-  .email , .password{
+  .email,
+  .password {
     width: 60%;
-
   }
-  }
-  
-  /* lg */
-  @media (max-width: 1024px) {
-    .container {
-      max-height: fit-content;
-
-        max-width: 100%;
-        display: flex;
-        flex-direction: row;
-    }
-    .image{
-    min-width:50%;
-
-    }
-    .signIn{
-    min-width:50%;
-
-
-    }
-    .email , .password{
-      width: 60%;
-  
-    }
-
-  }
-  
-  /* md */
-  @media (max-width: 768px) {
-    .container {
-      max-width: fit-content;
-      max-height: fit-content;
-      display: flex;
-      flex-direction: column;
-    }
-  }
-  
-
- 
-  /* sm */
-  @media (max-width: 640px) {
-    .container {
-      max-width: fit-content;
-      max-height: fit-content;
-
-    }
-  }
-  
-  /* xs */
-  @media (max-width: 475px) {
-    .container {
-      max-width: fit-content;
-      max-height: fit-content;
-    }
-  }
-
-.image {
-    background:linear-gradient(0deg, rgba(17, 17, 17, 0.25) 0%, rgba(17, 17, 17, 0.25) 100%), url(./images/pxfuel1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative; 
-    justify-content: flex-start; 
-    align-items: flex-start; 
-    /* display: inline-flex; */
-   
 }
 
-.Headline-Subhead{
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: flex-start; 
-    gap: 16px; 
-    display: inline-flex; 
-    margin-top: 182px; 
-    margin-left: 72px; 
-    margin-right: 283px;
-    margin-bottom: 70%; 
-    font-family: Poppins;
-}
-
-.signIn{
-    height: 100%; 
-    position: relative; 
-    flex-direction: column; 
-    align-items: center;  
-    display: inline-flex;
-
-}
-
-.signUpTop{
-    padding: 2px; 
-    justify-content: flex-end; 
-    /* display:inline-flex; */
-    flex-direction: row; 
-    font-family: Poppins;
-    margin-top: 40px; 
-    margin-left: 50%;
-    word-wrap:none;  
-    gap: 30px;
-  
-
-}
-
-.LogIn{
-    flex-direction: column; 
-    justify-content: center;  
-    align-items: flex-start; 
+@media (max-width: 1024px) {
+  .container {
+    max-height: fit-content;
+    max-width: fit-content;
     display: flex;
-    margin-left: 50px;
-    margin-right: 50px;
-    position: relative;
- 
-
-
+    flex-direction: row;
+  }
+  .image {
+    min-width: 50%;
+  }
+  .signIn {
+    min-width: 50%;
+  }
+  .email,
+  .password {
+    width: 60%;
+  }
 }
 
-
-.continue{
-    flex-direction: column; 
-    justify-content: flex-start; 
-    align-items: flex-start; 
-    gap: 16px; 
-    display: flex
-}
-
-
-
-
-.withGoogle {
-    position: relative; 
-    background-image: url('./images/pngwing.com.png');
-    background-size: 40px 40px ; 
-    background-repeat: no-repeat;
-    background-position: 120px center; 
-    width: 100%;
-    height: 64px; 
-    padding: 10px;
-    background-color: white;
-    border: 1px solid #333333;
-    border-radius: 40px;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-    color: #333333; 
-    font-size: 24px; 
-    font-weight: 400; 
-    word-wrap: break-word;
-}
-
-.withTwitter {
-    position: relative; 
-    background-image: url('./images/pngegg.png');
-    background-size: 40px 40px ; 
-    background-repeat: no-repeat;
-    background-position: 120px center; 
-    width: 100%;
-    height: 64px; 
-    padding: 10px;
-    background-color: white;
-    border: 1px solid #333333;
-    border-radius: 40px;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-    color: #333333; 
-    font-size: 24px; 
-    font-weight: 400; 
-    word-wrap: break-word;
-    font-family: Poppins;
-}
-
-
-.withGoogle:hover , .withTwitter:hover {
-    background-color: #997825;
-    color: white;
-}
-
-
-
-.OR{
-    width: 100%; 
-    justify-content: flex-start; 
-    align-items: center; 
-    gap: 23px; 
-    display: inline-flex;
-    font-family: Poppins;
-    
-}
-
-.divider{
-    flex: 1 1 0; 
-    height: 2px; 
-    background: rgba(102, 102, 102, 0.25);
-}
-
-.form{
-    flex-direction: column; 
-    justify-content: flex-start; 
-    align-items: flex-start; 
-    display: flex
-}
-
-label{
-    color: #666666; 
-    font-size: 16px; 
-    font-family: Poppins; 
-    font-weight: 400; 
-    word-wrap: break-word;
-}
-
-.email , .password{
-    flex-direction: column; 
-    justify-content: flex-start; 
-    align-items: flex-start; 
+@media (max-width: 768px) {
+  .container {
+    max-width: fit-content;
+    max-height: fit-content;
     display: flex;
-    display: inline-flex;
-    width: 100%; 
-    height: 45px; 
-    padding: 10px;
-    position: relative; 
-    border-radius: 12px; 
-    border: 0.50px rgba(102, 102, 102, 0.35) solid;
-
-
-
-
+    flex-direction: column;
+  }
 }
 
-
-
-.pass {
-    display: flex;
-    align-items: center;
-    gap: 350px;
-    
+@media (max-width: 640px) {
+  .container {
+    max-width: fit-content;
+    max-height: fit-content;
+  }
 }
 
-.hide-password {
-    text-align: right;
-    color: rgba(102, 102, 102, 0.80);
-    font-size: 18px;
-    font-family: Poppins;
-    font-weight: 400;
-    word-wrap: break-word;
-    position: absolute;
-    right: 50px;
-    cursor: pointer;
-
+@media (max-width: 475px) {
+  .container {
+    max-width: fit-content;
+    max-height: fit-content;
+  }
 }
-
-.forgot {
-    color: #111111; 
-    text-decoration: underline;
-    word-wrap: none;
-    justify-content: flex-end; 
-    align-items: flex-end; 
-    display:inline-flex;
-    font-family: Poppins;
-    margin-right: 10px; 
-    margin-left: 390px;
-    font-weight:bolder;  
-    
-
-}
-
-.button{
-width: 304px; 
-height: 64px; 
-padding-top: 16.50px; 
-padding-bottom: 16.50px; 
-background: #997825; 
-border-radius: 32px; 
-justify-content: center; 
-align-items: center; 
-display: inline-flex;
-text-align: center; 
-color: white; 
-font-size: 20px; 
-font-family: Poppins; 
-font-weight: 400; 
-word-wrap: break-word;
-
-
-
-
-
-}
-
-
-.signUpBottom {
-    padding: 2px; 
-    justify-content: flex-end; 
-    align-items: flex-end; 
-    display:inline-flex;
-    flex-direction: row; 
-    font-size: regular; 
-    font-family: Poppins;
-    margin-right: 10px; 
-
-}
-
-
-
-
-
